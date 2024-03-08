@@ -394,6 +394,10 @@
     margin-bottom: 10px;
   }
 
+  .introduce {
+    padding: 20px;
+  }
+
   .introduce-list {
     flex-direction: column;
   }
@@ -403,7 +407,7 @@
   }
 
   .introduce-item:nth-child(n+2) {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .map {
