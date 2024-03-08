@@ -165,7 +165,7 @@
   font-weight: bold;
 }
 
-.menu{
+.menu {
   background-color: #fff;
   padding-top: 45px;
   padding-bottom: 55px;
@@ -197,6 +197,9 @@
   display: flex;
   padding: 20px 60px;
   overflow: scroll;
+}
+
+.bottom-border {
   border-bottom: 1px solid #000;
 }
 
@@ -395,7 +398,7 @@
   }
 
   .introduce {
-    padding: 20px;
+    padding: 60px 20px;
   }
 
   .introduce-list {
