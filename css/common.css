@@ -251,12 +251,12 @@ body {
     padding-bottom: 50px;
     opacity: 0;
     transition: all 500ms;
-    /* transform: translate(100%, 0); */
+    transform: translate(100%, 0);
   }
 
   .header-menu-list.is-show {
     opacity: 1;
-    /* transform: translate(0); */
+    transform: translate(0);
   }
 
   .main {
