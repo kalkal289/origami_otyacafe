@@ -29,4 +29,43 @@ $(function() {
   $(".header-menu-list").click(function() {
     $(".header-menu-list").removeClass("is-show");
   });
+
+
+  //クイズ進行処理
+  const quizNumber = 5; //クイズの数
+  let correctCount = 0;
+
+  $(".js-answer-btn").click(function() {
+    var number = $(this).parent().data('quiz-number');
+    if ($(this).hasClass("correct")) {
+      correctCount++;
+      $(".js-result" + number).html('<span class="correct-color">正解</span>');
+    } else {
+      $(".js-result" + number).html('<span class="incorrect-color">不正解</span>');
+    }
+    $(".js-quiz" + number).hide();
+    if (number != quizNumber) {
+      $(".js-quiz" + (number + 1)).fadeIn(300);
+    } else {
+      if (correctCount == quizNumber) {
+        $(".js-result-mess").html('<p class="correct-mess">おめでとう！！全問正解だよ！！君もめちゃお茶博士だね！！</p>');
+        // $(".js-result-mess").show();
+      } else if (correctCount == 0) {
+        $(".js-result-mess").html('<p class="incorrect-mess">おめでとう、君は今日最も成長した人の一人だ！');
+        // $(".js-result-mess").show();
+      } else {
+        $(".js-result-mess").html('<p class="normal-mess">惜しい！次こそはきっと全問正解できるよ！');
+      }
+      $(".js-quiz-result").fadeIn(300);
+      $(".js-result-number").html(correctCount);
+    }
+  });
+  
+  //クイズ結果
+  $(".js-quiz-reset").click(function() {
+    correctCount = 0;
+    // $(".js-result-mess").hide();
+    $(".js-quiz-result").hide();
+    $(".js-quiz1").fadeIn(300);
+  });
 });
