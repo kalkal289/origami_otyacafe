@@ -34,6 +34,7 @@
             <li><a href="#menu">メニュー</a></li>
             <li><a href="#introduce">運営元紹介</a></li>
             <li><a href="#question">Q&A</a></li>
+            <li><a href="#quiz">クイズ</a></li>
             <li><a href="#map">アクセス</a></li>
           </ul>
         </nav>
@@ -268,7 +269,7 @@
         </dt>
         <dd>次回の開催はまだ未定となっております。<br>しかし、来年に次回の開催を予定しておりますので、告知をお待ちください。</dd>
       </dl>
-      <!-- <dl>
+      <dl>
         <dt class="js-question">
           バナナはおやつに入りますか？
           <i class="qa-icon fa-solid fa-caret-down"></i>
@@ -281,7 +282,7 @@
           <i class="qa-icon fa-solid fa-caret-down"></i>
         </dt>
         <dd>そうです。ナンなんです。ﾅｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰﾝ</dd>
-      </dl> -->
+      </dl>
       <dl>
         <dt class="js-question">
           この企画は誰が運営しているのですか？
@@ -292,6 +293,100 @@
       <!-- <div class="link-button-area">
         <a class="link-button" href="./concept.html">CONCEPT</a>
       </div> -->
+    </div>
+
+    <div id="quiz" class="quiz section">
+      <h2 class="sub-title center">お茶クイズ</h2>
+
+      <div class="quiz-container">
+
+        <div class="js-quiz1">
+          <small class="quiz-number"><span class="just-quiz-number">第1問</span> / 5問</small>
+          <p class="quiz-text">
+            ほうじ茶は緑茶の一種である！
+          </p>
+          <div class="answer-area" data-quiz-number="1">
+            <div class="answer-btn answer-circle js-answer-btn correct"><i class="fa-regular fa-circle"></i></div>
+            <div class="answer-btn answer-xmark js-answer-btn"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+  
+        <div class="js-quiz2 hidden">
+          <small class="quiz-number"><span class="just-quiz-number">第2問</span> / 5問</small>
+          <p class="quiz-text">
+            荒川茶はコクや甘み、まろやかさが特徴のお茶！
+          </p>
+          <div class="answer-area" data-quiz-number="2">
+            <div class="answer-btn answer-circle js-answer-btn correct"><i class="fa-regular fa-circle"></i></div>
+            <div class="answer-btn answer-xmark js-answer-btn"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+  
+        <div class="js-quiz3 hidden">
+          <small class="quiz-number"><span class="just-quiz-number">第3問</span> / 5問</small>
+          <p class="quiz-text">
+            烏龍茶は中国茶の分類上「赤茶」と呼ばれていた！
+          </p>
+          <div class="answer-area" data-quiz-number="3">
+            <div class="answer-btn answer-circle js-answer-btn"><i class="fa-regular fa-circle"></i></div>
+            <div class="answer-btn answer-xmark js-answer-btn correct"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+  
+        <div class="js-quiz4 hidden">
+          <small class="quiz-number"><span class="just-quiz-number">第4問</span> / 5問</small>
+          <p class="quiz-text">
+            麦茶の成分にはカフェインやタンニンが含まれている！
+          </p>
+          <div class="answer-area" data-quiz-number="4">
+            <div class="answer-btn answer-circle js-answer-btn"><i class="fa-regular fa-circle"></i></div>
+            <div class="answer-btn answer-xmark js-answer-btn correct"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+  
+        <div class="js-quiz5 hidden">
+          <small class="quiz-number"><span class="just-quiz-number">第5問</span> / 5問</small>
+          <p class="quiz-text">
+            <!-- 緑茶の種類には玉露、煎茶、番茶、抹茶などがある！ -->
+            バナナはおやつに入る！！！🍌🍌🍌🍌🍌
+          </p>
+          <div class="answer-area" data-quiz-number="5">
+            <div class="answer-btn answer-circle js-answer-btn correct"><i class="fa-regular fa-circle"></i></div>
+            <div class="answer-btn answer-xmark js-answer-btn"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+  
+        <div class="js-quiz-result hidden">
+          <small class="quiz-number"><span class="jast-quiz-number">結果</span></small>
+          <p class="result-number-text">5問中<span class="result-number js-result-number"></span>問正解</p>
+          <div class="quiz-result-area">
+            <dl>
+              <dt>第1問</dt>
+              <dd class="js-result1"></dd>
+            </dl>
+            <dl>
+              <dt>第2問</dt>
+              <dd class="js-result2"></dd>
+            </dl>
+            <dl>
+              <dt>第3問</dt>
+              <dd class="js-result3"></dd>
+            </dl>
+            <dl>
+              <dt>第4問</dt>
+              <dd class="js-result4"></dd>
+            </dl>
+            <dl>
+              <dt>第5問</dt>
+              <dd class="js-result5"></dd>
+            </dl>
+          </div>
+          <div class="result-mess js-result-mess"></div>
+          <div class="quiz-onemore-btn js-quiz-reset">再挑戦</div>
+        </div>
+
+      </div>
+
     </div>
 
     <div id="map" class="map section">
@@ -310,6 +405,7 @@
         <li><a href="#menu">メニュー</a></li>
         <li><a href="#introduce">運営元紹介</a></li>
         <li><a href="#question">Q&A</a></li>
+        <li><a href="#quiz">クイズ</a></li>
         <li><a href="#map">アクセス</a></li>
       </ul>
     </nav>
