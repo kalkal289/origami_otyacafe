@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+:root {
+  --origami-color: #5f9cff;
+  --uenoclub-color: rgb(241, 69, 69);
+  --kiminoen-color: #42e966;
+}
+
 .first-view {
   position: relative;
   height: calc(100vh - 110px);
@@ -231,7 +237,7 @@
 }
 
 .introduce-item {
-  width: 45%;
+  width: 30%;
   text-align: center;
   margin: 0 auto;
 }
@@ -261,26 +267,38 @@
 }
 
 .origami-link {
-  border: 1px solid #5f9cff;
+  border: 1px solid var(--origami-color);
   background-color: #fff;
-  color: #5f9cff;
+  color: var(--origami-color);
 }
 
 .origami-link:hover {
-  border: 1px solid #5f9cff;
-  background-color: #5f9cff;
+  border: 1px solid var(--origami-color);
+  background-color: var(--origami-color);
+  color: #fff;
+}
+
+.uenoclub-link {
+  border: 1px solid var(--uenoclub-color);
+  background-color: #fff;
+  color: var(--uenoclub-color);
+}
+
+.uenoclub-link:hover {
+  border: 1px solid var(--uenoclub-color);
+  background-color: var(--uenoclub-color);
   color: #fff;
 }
 
 .kiminoen-link {
-  border: 1px solid #42e966;
+  border: 1px solid var(--kiminoen-color);
   background-color: #fff;
-  color: #42e966;
+  color: var(--kiminoen-color);
 }
 
 .kiminoen-link:hover {
-  border: 1px solid #42e966;
-  background-color: #42e966;
+  border: 1px solid var(--kiminoen-color);
+  background-color: var(--kiminoen-color);
   color: #fff;
 }
 
@@ -510,6 +528,62 @@
   margin: 30px auto 0;
 }
 
+.enter-view {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.enter-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.enter-content {
+  text-align: center;
+  width: 90%;
+  padding-bottom: 100px;
+  z-index: 60;
+}
+
+.enter-img-area {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.enter-img {
+  width: 100%;
+  opacity: 0;
+}
+
+.enter-text {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Serif JP", serif;
+  color: #56ff47;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.opacity100 {
+  opacity: 100;
+  transition: all 1000ms;
+}
+
 @media(max-width: 800px) {
   .first-view {
     height: calc(100vh - 50px);
@@ -614,5 +688,21 @@
   .map iframe {
     width: 100%;
     height: 320px;
+  }
+
+  .enter-img-area {
+    width: 80%;
+  }
+
+  .enter-text {
+    flex-direction: column;
+  }
+
+  .enter-text span {
+    margin-top: 20px;
+  }
+  
+  .enter-text {
+    font-size: 20px;
   }
 }
