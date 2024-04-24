@@ -657,6 +657,10 @@
     margin-top: 60px;
   }
 
+  .quiz {
+    padding: 60px 20px;
+  }
+
   .quiz-container {
     width: 100%;
   }
