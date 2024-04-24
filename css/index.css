@@ -302,7 +302,7 @@
   color: #fff;
 }
 
-// question
+/* question */
 
 .question {
   background-color: #fff;
@@ -351,7 +351,7 @@
   transform: rotateX(180deg);
 }
 
-// quiz
+/* quiz */
 
 .quiz {
   background-color: #f0f0f0;
