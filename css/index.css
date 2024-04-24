@@ -302,6 +302,8 @@
   color: #fff;
 }
 
+// question
+
 .question {
   background-color: #fff;
   padding: 45px 30px 55px 30px;
@@ -327,7 +329,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #efefef;
+  background-color: #efefef;  
+  cursor: pointer;
 }
 
 .question dd {
@@ -348,7 +351,7 @@
   transform: rotateX(180deg);
 }
 
-
+// quiz
 
 .quiz {
   background-color: #f0f0f0;
