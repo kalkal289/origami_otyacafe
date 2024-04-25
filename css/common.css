@@ -73,7 +73,8 @@ body {
 .wrapper {
   width: 930px;
   max-width: 90%;
-  margin: 75px auto 0;
+  padding: 75px 0;
+  margin: 0 auto;
 }
 
 .link-button-area {
@@ -82,17 +83,19 @@ body {
 }
 
 .link-button {
-  background-color: #f4dd64;
+  /* background-color: #64f47a; */
   display: inline-block;
   min-width: 180px;
   line-height: 48px;
   border-radius: 24px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  border: 2px solid #00d80e;
 }
 
 .link-button:hover {
-  background-color: #d8b500;
+  background-color: #00d80e;
+  color: #fff;
 }
 
 .sub-title {
@@ -109,6 +112,28 @@ body {
   height: 3px;
   background-color: #177500;
   margin-top: 20px;
+}
+
+.menu-title {
+  padding-top: 40px;
+  padding-left: 60px;
+  font-size: 20px;
+}
+
+.menu-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  margin-top: 10px;
+}
+
+.menu-title-tea::after {
+  background-color: #77ff00;
+}
+
+.menu-title-sweet::after {
+  background-color: #ffb700;
 }
 
 .center {
@@ -282,7 +307,7 @@ body {
   }
 
   .footer-intro {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .footer-tel {
